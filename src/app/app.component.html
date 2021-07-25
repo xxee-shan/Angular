@@ -1,0 +1,5 @@
+<button class="btn btn-primary" (click)="addClick()">Display Details</button>
+<p *ngIf="display">Data to toogle display!!</p>
+<p *ngFor="let item of clicks" 
+[ngStyle]="{backgroundColor: getColor(item)}"
+[ngClass]="{white: isWhite(item)}">{{item}}</p>
