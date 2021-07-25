@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  username:String = '';
+
+  disabled  = () : boolean =>{
+    return this.username=='';
+  }
+
+  reset = (): void =>{
+    this.username = '';
+  }
 }
